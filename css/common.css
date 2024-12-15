@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+/* ================ TASK-1 STYLES ================ */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.item {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-list-text {
+  display: flex;
+  align-items: center;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-left: 16px;
+}
+.item-list-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item-title {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+/* ================ TASK-2 STYLES ================ */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.gallery-img {
+  width: calc((100% - 2 * 24px) / 3);
+}
+/* ================ TASK-3 STYLES ================ */
+#name-input {
+  width: 360px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  background-color: transparent;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+#name-input::placeholder {
+  color: #2e2f42;
+}
+/* ================ TASK-4 STYLES ================ */
+.login-form {
+  padding: 24px;
+}
+
+.login-form-label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.review-form-input {
+  display: block;
+  position: relative;
+  width: 360px;
+  height: 40px;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #000;
+  border-radius: 4px;
+  outline: transparent;
+  background-color: transparent;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-input:hover {
+  outline: none;
+  border-color: #000;
+}
+.review-form-input::after {
+  content: 'Type area';
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  pointer-events: none;
+  opacity: 0;
+  top: 8px;
+  left: 16px;
+}
+.review-form-input:focus ~ ::after {
+  opacity: 1;
+}
+.review-form-submit-btn {
+  border-radius: 8px;
+  width: 86px;
+  height: 40px;
+  display: block;
+  margin-top: 16px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-submit-btn:hover,
+.review-form-submit-btn:focus {
+  background: #6c8cff;
+}
+/* ================ TASK-5 STYLES ================ */
+.widget {
+  width: 169px;
+  height: 80px;
+}
+.change-color {
+  border-radius: 8px;
+  width: 148px;
+  height: 40px;
+
+  display: block;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.change-color:hover,
+.change-color:focus {
+  background: #6c8cff;
+}
+/* ================ TASK-6 STYLES ================ */
+#controls,
+#boxes {
+  display: flex;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 32px;
+
+  background: #f6f6fe;
+  align-items: center;
+  justify-content: center;
+}
+#controls {
+  margin-bottom: 16px;
+}
+.create {
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  display: block;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.create:hover,
+.create:focus {
+  background: #6c8cff;
+}
+.destroy {
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  display: block;
+  background: #ff4e4e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.destroy:hover,
+.destroy:focus {
+  background: #ff7070;
+}
+.controls-input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  cursor: pointer;
+  text-align: center;
+}
+.controls-input:hover,
+.controls-input:focus {
+  border-color: #000;
+}
